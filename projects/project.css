@@ -1,0 +1,382 @@
+body {
+    margin: 0;
+    
+    font-family: Helvetica,Arial,sans-serif;
+  }
+  a, body {
+    color: #585852;
+    text-decoration: none;
+  }
+  .container {
+    max-width: 100vw;
+    background-color: white;
+    margin-bottom: 0;
+  }
+  
+  .main_picture {
+    position: relative;
+    height: 100vh;
+    background-image: url("../images/SHERATON_ESENYURT/2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    position: absolute;
+    top: 4%;
+    left: 2%;  
+  }
+  
+  .logo img {
+    width: 165px;
+    height: 80px;
+  }
+  
+  .burger-menu_button {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    z-index: 30;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .burger-menu_lines,
+  .burger-menu_lines::after,
+  .burger-menu_lines::before {
+    position: absolute;
+    width: 38px;
+    height: 4px;
+    background-color: grey;
+  }
+  
+  .burger-menu_lines {
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+  }
+  
+  .burger-menu_lines::before {
+    content: '';
+    top: 12px;
+  }
+  
+  .burger-menu_lines::after {
+    content: '';
+    top: -12px;
+  }
+  
+  .burger-menu_active .burger-menu_lines {
+    background-color: transparent;
+  }
+  
+  .burger-menu_active .burger-menu_lines::before {
+    top: 0;
+    transform: rotate(45deg);
+    transition-delay: 0s, 0.4s;
+  }
+  
+  .burger-menu_active .burger-menu_lines::after {
+    top: 0;
+    transform: rotate(-45deg);
+    transition-delay: 0s, 0.4s;
+  }
+  
+  .burger-menu_nav {
+    padding: 110px 80px 0px 80px;
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    background: rgb(88,88,82);
+    overflow-y: auto;
+    right: -100%;
+    transition: all .6s;
+  }
+  
+  .burger-menu_active .burger-menu_nav {
+    right: 0px;
+    transform: translateX(0);
+  }
+  
+  .burger-menu_link {
+    padding: 30px;
+    font-size: 29px;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 4px;
+    font-weight: bold;
+    color: aliceblue;
+    text-align: right;
+    
+  }
+  .burger-menu_link {
+    padding: 30px;
+    font-size: 29px;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 4px;
+    font-weight: bold;
+    color: aliceblue;
+    text-align: right;
+    
+  }
+  .burger-menu .follow-us {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 90px;
+    padding: 30px;
+  }
+  .burger-menu_social-media {
+    display: flex;
+    flex-direction: row; 
+  }
+  
+  .burger-menu_social-media-link-image {
+    width: 22px;
+    height: 22px;
+    margin-left: 20px;
+  }
+  
+  
+  .project_section {
+    width: 85%;
+    margin: 0 auto;
+  }
+  
+  .project-head {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 40px;
+  }
+  
+  .project-name {
+    display: flex;
+    flex-direction: row;
+   
+  }
+  .project-name h3 {
+    padding: 0px 25px;
+    color: rgb(141 133 132);
+  }
+  .border-right {
+    border-right: 2px solid rgb(183,178,177);
+  }
+ 
+  #index-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 25px;
+    grid-template-areas: 
+    "img1 img2 img3"
+    "img4 img5 img6"
+    "img7 img8 img9"
+    "img10 img10 .";
+  }
+  
+  #index-gallery .gallery-img {
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: all .6s;
+    display: flex;
+    align-items: flex-end;
+
+  }
+ 
+  #index-gallery .gallery-img:hover {
+    transform: scale(1.1);
+  }
+  
+  #index-gallery .img1 {
+    grid-area: img1;
+    background-image: url("../images/BREWERY_HOUSE/1.jpg"); 
+  
+  }
+  
+  #index-gallery .img2 {
+    grid-area: img2;
+    background-image: url("../images/DIDIM_HOTEL/1.JPG"); 
+  }
+  
+  #index-gallery .img3 {
+    grid-area: img3;
+    background-image: url("../images/FAIRMONT_HOTEL_1/1.jpg"); 
+  }
+  
+  #index-gallery .img4 {
+    grid-area: img4;
+    background-image: url("../images/FAIRMONT_HOTEL_2/1.jpg"); 
+  }
+  #index-gallery .img5 {
+    grid-area: img5;
+    background-image: url("../images/PRIVATE_RESIDENCE_1453_MASLAK/1.jpg"); 
+  
+  }
+  
+  #index-gallery .img6 {
+    grid-area: img6;
+    background-image: url("../images/PRIVATE_RESIDENCE_ETILER/1.jpg"); 
+  }
+  
+  #index-gallery .img7 {
+    grid-area: img7;
+    background-image: url("../images/SAVISTKY_PLAZA_AVANTGARDE_HOTEL/2.jpg"); 
+  }
+  
+  #index-gallery .img8 {
+    grid-area: img8;
+    background-image: url("../images/SHERATON_ESENYURT/3.jpg"); 
+  }
+
+  #index-gallery .img9 {
+    grid-area: img9;
+    background-image: url("../images/STONEBRIDGE_HOTEL/1.jpg"); 
+  
+  }
+  
+  #index-gallery .img10 {
+    grid-area: img10;
+    background-image: url("../images/MOYAJ_RESTAURANT/small_img/1.jpg"); 
+    background-position: right;
+  }
+  
+ 
+  
+  hr {
+    color: #9F9F9D;
+    margin-top: 70px;
+  }
+  .footer {
+    padding: 60px 0;
+  }
+  
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-phone_number {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  
+  @media screen and (max-width: 1150px) {
+    #index-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-gap: 25px;
+      grid-template-areas: 
+      "img1 img2"
+      "img3 img4"
+      "img5 img6"
+      "img7 img8"
+      "img9 img10";
+    }
+  }
+  
+  @media screen and (max-width: 1150px) {
+    .logo {
+      left: 4%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .logo {
+      left: 6%;
+    }
+  
+    .logo img {
+      width: 140px;
+      height: 70px;
+    }
+    .burger-menu_nav {
+        padding: 110px 0px 0px 80px;
+        position: fixed;
+        z-index: 20;
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        background: rgb(88,88,82);
+        overflow-y: auto;
+        right: -115%;
+        transition: all .6s;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .burger-menu .follow-us {
+      align-items: center;
+    }
+    
+    .burger-menu_social-media-link-image {
+      margin-left: 0;
+      padding: 5px;
+    }
+    .project-head {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 5px;
+    }
+    .project-name {
+      flex-direction: column;
+      align-items: center;
+    }
+    .border-right {
+      border-right: none;
+    }
+    #index-gallery {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-gap: 25px;
+      grid-template-areas: 
+      "img1"
+      "img2"
+      "img3"
+      "img4"
+      "img5"
+      "img6"
+      "img7"
+      "img8"
+      "img9"
+      "img10";
+    }
+    
+    .burger-menu_active .burger-menu_nav {
+      width: 100%;
+    }
+    
+    .footer {
+      padding: 20px 0;
+    }
+    .footer-info {
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer-info div {
+      padding-bottom: 18px;
+    }
+  }
+  
+  

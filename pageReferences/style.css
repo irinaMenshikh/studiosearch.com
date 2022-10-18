@@ -1,0 +1,280 @@
+body {
+  margin: 0;
+
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a,
+body {
+  color: #585852;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  background-color: white;
+
+}
+
+.head {
+  height: auto;
+  border: 2.5px solid #9F9F9D;
+  width: 85%;
+  margin: 0 auto;
+  padding: 5px 20px;
+  margin-top: 2px;
+}
+
+.head-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.name-of-logo {
+  font-weight: bolder;
+}
+
+.head .head-picture {
+  width: 90%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+}
+.burger-menu_button {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  z-index: 30;
+  width: 80px;
+  height: 80px;
+}
+
+.burger-menu_lines,
+.burger-menu_lines::after,
+.burger-menu_lines::before {
+  position: absolute;
+  width: 38px;
+  height: 4px;
+  background-color: grey;
+}
+
+.burger-menu_lines {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.burger-menu_lines::before {
+  content: '';
+  top: 12px;
+}
+
+.burger-menu_lines::after {
+  content: '';
+  top: -12px;
+}
+
+.burger-menu_active .burger-menu_lines {
+  background-color: transparent;
+}
+
+.burger-menu_active .burger-menu_lines::before {
+  top: 0;
+  transform: rotate(45deg);
+  transition-delay: 0s, 0.4s;
+}
+
+.burger-menu_active .burger-menu_lines::after {
+  top: 0;
+  transform: rotate(-45deg);
+  transition-delay: 0s, 0.4s;
+}
+
+.burger-menu_nav {
+  padding: 110px 80px 0px 80px;
+  position: fixed;
+  z-index: 20;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  background: rgb(88, 88, 82);
+  overflow-y: auto;
+  right: -100%;
+  transition: all .6s;
+}
+
+.burger-menu_active .burger-menu_nav {
+  top: 0;
+  right: 0px;
+  transform: translateX(0);
+}
+
+.burger-menu_link {
+  padding: 30px;
+  font-size: 29px;
+  font-family: sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 4px;
+  font-weight: bold;
+  color: aliceblue;
+  text-align: right;
+
+}
+
+.burger-menu_link {
+  padding: 30px;
+  font-size: 29px;
+  font-family: sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 4px;
+  font-weight: bold;
+  color: aliceblue;
+  text-align: right;
+
+}
+
+.burger-menu .follow-us {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 90px;
+  padding: 30px;
+}
+
+.burger-menu_social-media {
+  display: flex;
+  flex-direction: row;
+}
+
+.burger-menu_social-media-link-image {
+  width: 22px;
+  height: 22px;
+  margin-left: 20px;
+}
+
+.text-section {
+  width: 90%;
+  padding-top: 10%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-me {
+ 
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 45px;
+}
+
+.about-me h1 {
+  text-align: right;
+  display: flex;
+
+}
+
+.text-about {
+  line-height: 28px;
+  text-align: left;
+  font-size: 24px;
+}
+
+hr {
+  color: #9F9F9D;
+  margin-top: 70px;
+}
+
+.footer {
+  padding: 60px 0;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-phone_number {
+  display: flex;
+  align-items: center;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  
+  .burger-menu_nav {
+    padding: 110px 0px 0px 80px;
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    background: rgb(88, 88, 82);
+    overflow-y: auto;
+    right: -115%;
+    transition: all .6s;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .burger-menu .follow-us {
+    align-items: center;
+  }
+
+  .burger-menu_social-media-link-image {
+    margin-left: 0;
+    padding: 5px;
+  }
+
+  .project-head {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px;
+  }
+
+
+  .burger-menu_active .burger-menu_nav {
+    width: 100%;
+  }
+
+  .about-me {
+  
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .about-me h1 {
+    text-align: left;
+  }
+.text-about {
+  font-size: 20px;
+}
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer-info {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-info div {
+    padding-bottom: 18px;
+  }
+}
