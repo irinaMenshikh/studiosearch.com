@@ -36,11 +36,13 @@ body {
   
   .burger-menu_button {
     position: fixed;
-    top: 20px;
-    right: 10px;
+    top: 30px;
+    right: 30px;
     z-index: 30;
     width: 80px;
     height: 80px;
+    background-color: rgb(88,88,82, 0.6);
+    border-radius: 2px;
   }
   
   .burger-menu_lines,
@@ -49,7 +51,7 @@ body {
     position: absolute;
     width: 38px;
     height: 4px;
-    background-color: grey;
+    background-color: white;
   }
   
   .burger-menu_lines {
@@ -340,6 +342,11 @@ body {
     .project-name {
       flex-direction: column;
       align-items: center;
+      margin-bottom: 20px;
+    }
+    .project-name h3 {
+     padding: 0;
+     margin: 6px;
     }
     .border-right {
       border-right: none;

@@ -167,7 +167,7 @@ a {
   gap: 25px;
 }
 
-.phone-border {
+.phone-number {
   border-right: 2px solid gray;
   padding-right: 25px;
 }
@@ -255,9 +255,10 @@ a {
     align-items: center;
     gap: 0px;
   }
-  .phone-border {
+  .phone-number {
     border-right: none;
     padding-right: 0;
+    margin-bottom: 15px;
   }
   .social-media-section {
     text-align: center;

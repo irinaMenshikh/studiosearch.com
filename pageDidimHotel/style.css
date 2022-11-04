@@ -259,6 +259,9 @@ a {
   border-left: 2px solid rgb(254, 254, 254);
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
+  background: transparent;
+  border-bottom: transparent;
+  border-right: transparent;
 }
 
 .img-btn-prev {
@@ -274,6 +277,9 @@ a {
   border-left: 2px solid rgb(254, 254, 254);
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+  background: transparent;
+  border-bottom: transparent;
+  border-right: transparent;
 }
 
 

@@ -167,14 +167,13 @@ body {
 }
 
 .text-section {
-  width: 90%;
-  padding-top: 10%;
+  width: 88%;
+  padding-top: 8%;
   margin: 0 auto;
   text-align: center;
 }
 
 .about-me {
- 
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 45px;
@@ -187,9 +186,8 @@ body {
 }
 
 .text-about {
-  line-height: 28px;
   text-align: left;
-  font-size: 24px;
+  padding-top: 10px;
 }
 
 hr {
@@ -210,7 +208,11 @@ hr {
   display: flex;
   align-items: center;
 }
-
+@media screen and (max-width: 968px) {
+  .text-about p {
+    line-height: 26px;
+  }
+}
 
 
 @media screen and (max-width: 768px) {

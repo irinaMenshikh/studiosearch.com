@@ -171,7 +171,7 @@ body {
 }
 
 .text-section {
-  width: 85%;
+  width: 88%;
   margin: 0 auto;
   text-align: center;
 }
@@ -185,6 +185,9 @@ body {
   grid-template-columns: 0.2fr 3fr 3fr;
   text-align: left;
   line-height: 25px;
+  border-top: 2.5px solid  #9F9F9D;
+  margin-top: 30px;
+  padding-top: 18px;
 }
 
 .number-of-text {
@@ -209,7 +212,7 @@ body {
 hr {
   color: #9F9F9D;
   margin-top: 50px;
-
+  size: 1px;
 }
 
 .footer {
