@@ -17,40 +17,19 @@ body {
 }
 
 .head {
-  height: auto;
-  border: 2.5px solid #9F9F9D;
-  width: 85%;
-  margin: 0 auto;
-  padding: 5px 20px;
-  margin-top: 2px;
+  height: 16vh;
+}
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 1.5%;  
 }
 
-.head-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.logo img {
+  width: 165px;
+  height: 80px;
 }
 
-.head-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-.name-of-logo {
-  font-weight: bolder;
-}
-
-.head .head-picture {
-  width: 90%;
-  height: auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  object-fit: cover;
-}
 .burger-menu_button {
   position: fixed;
   top: 30px;
@@ -170,7 +149,6 @@ body {
 
 .text-section {
   width: 88%;
-  padding-top: 8%;
   margin: 0 auto;
   text-align: center;
 }
@@ -214,10 +192,20 @@ hr {
   .text-about p {
     line-height: 26px;
   }
+  .logo {
+    left: 2.5%;
+  }
 }
 
 
 @media screen and (max-width: 768px) {
+  .logo {
+    left: 4%;
+  }
+  .logo img {
+    width: 140px;
+    height: 70px;
+  }
   
   .burger-menu_nav {
     padding: 110px 0px 0px 80px;
@@ -245,11 +233,6 @@ hr {
     padding: 5px;
   }
 
-  .project-head {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 5px;
-  }
 
 
   .burger-menu_active .burger-menu_nav {

@@ -15,17 +15,6 @@ a {
   margin-bottom: 0;
 }
 
-.main_picture {
-  position: relative;
-  height: 60vh;
-  background-image: url("../images/STONEBRIDGE_HOTEL/1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-}
-
 .logo {
   position: absolute;
   top: 4%;
@@ -36,7 +25,6 @@ a {
   width: 165px;
   height: 80px;
 }
-
 
 .burger-menu_button {
   position: fixed;
@@ -145,7 +133,7 @@ a {
   width: 85%;
   height: fit-content;
   position: absolute;
-  top: 45%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, 0%);
 }
@@ -154,13 +142,12 @@ a {
   display: flex;
   flex-flow: column;
   align-items: center;
-  height: 200px;
+  height: fit-content;
   background: rgb(255, 255, 255);
   padding-top: 25px;
   justify-content: center;
 }
 .head-contact {
- margin-top: 10%;
  margin-bottom: 4%;
 }
 .phone-and-email {
@@ -174,9 +161,9 @@ a {
   padding-right: 25px;
 }
 .phone-and-email img{
-  width: 18px;
-  height: 18px;
-  margin-bottom: -2%;
+  width: 20px;
+  height: 20px;
+  margin-bottom: -2.5%;
   
 }
 .social-media-section {
@@ -194,25 +181,18 @@ a {
   
 }
 
-
-
-
-
-
-
 @media screen and (max-width: 1150px) {
   .logo {
     left: 2.5%;
   }
-
 }
 @media screen and (max-width: 768px) {
   .logo {
-    left: 4%;
+    left: 4.2%;
   }
   .logo img {
-    width: 140px;
-    height: 70px;
+    width: 160px;
+    height: 80px;
   }
   .burger-menu_nav {
     padding: 110px 0px 0px 80px;
