@@ -338,7 +338,7 @@ hr {
     background-position: 90%;
   }
   .burger-menu_nav {
-    padding: 110px 0px 0px 80px;
+    padding: 20px 0px 0px 80px;
     position: fixed;
     z-index: 20;
     display: flex;
@@ -353,10 +353,14 @@ hr {
     flex-direction: column;
     align-items: center;
   }
-  .burger-menu .follow-us {
-    align-items: center;
+  .burger-menu_link {
+    font-size: 24px; 
   }
-  
+  .burger-menu .follow-us{
+    align-items: center;
+    margin-top: 30px;
+  }
+
   .burger-menu_social-media-link-image {
     margin-left: 0;
     padding: 5px;
